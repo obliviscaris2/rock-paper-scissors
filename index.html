@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="/css/styles.css">
+    <script src="js/app.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <body>
     <div id="container">
-        <h1 class="title">ROCK, PAPER AND SCISSORS</h1>
-        <div class="button-panel">
-            <button id="btn"  value="rock">ROCK</button>
-            <button id="btn"  value="paper" >PAPER</button>
-            <button id="btn" value="scissors">SCISSORS</button>
+        <h1 class = "title"><a id ='title-animation' href='#'>Rock, Paper & Scissors</a></h1>
+        
+        <div id="play-button-container">
+            <button id="play">PLAY</button>
         </div>
-        <div class="playerAnswer"></div>
-
-        <div class="result">
-
+        
+        
+        <div class="turns-block">Turns Left: <span class="turns-left"> 5</span> </div>
+        <div class="button-container">
+            <button id="btn" value="rock"><img src="/assets/rock.png"></button>
+            <button id="btn" value="paper"><img src="/assets/paper.png"></button>
+            <button id="btn" value="scissors"><img src="/assets/scissors.png"></button>
         </div>
+
+        <div id="move-container">
+            <div id='moves' class="player-move"></div>
+            <div id='moves' class="computer-move"></div>
+        </div>
+        
+
+        <div id="result-container">
+            <div class="result"></div>
+        </div>
+    
+        <div id="refresh-button-container">
+            <button id="refresh">Refresh</button>
+        </div>
+        
     </div>
-    <script src="/js/app.js"> </script>
 </body>
 </html>
